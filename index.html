@@ -48,7 +48,7 @@
       <ul>
         <li><a href="">About</a></li>
         <li><a href="#skills">Projects</a></li>
-        <li><a href="#contact-div" style="margin-left: 40px;">Contact</a></li>
+        <li><a href="#contact-div" style="margin-left: 40px">Contact</a></li>
       </ul>
     </nav>
     <div class="h-[75px]"></div>
@@ -62,7 +62,14 @@
                 ><span class="hello">Hello!</span> My name is</span
               ><span id="name-span" class=""> Shreeyanshi Shukla</span>.
             </h1>
-            <p class="text-lg font-semibold" id="intro-para"><strong class="text-6xl">I'm</strong> an undergraduate pursuing a Bachelor of Technology in Computer Science. I have a keen interest in building websites and learning new technologies. My mindset to explore new things paves the way for new things to explore. I'm trying my best to analyze real-world problems and find solutions to them, as I can do using Computer Science.</p>
+            <p class="text-lg font-semibold" id="intro-para">
+              <strong class="text-6xl">I'm</strong> an undergraduate pursuing a
+              Bachelor of Technology in Computer Science. I have a keen interest
+              in building websites and learning new technologies. My mindset to
+              explore new things paves the way for new things to explore. I'm
+              trying my best to analyze real-world problems and find solutions
+              to them, as I can do using Computer Science.
+            </p>
           </section>
           <div>
             <br /><br />
@@ -75,36 +82,38 @@
                 href="https://www.linkedin.com/in/shreeyanshi-shukla-7411aa285/"
                 class="icon"
                 target="_blank"
-                ><img src="/images/linkedin.png" alt=""
+                ><img src="images/linkedin.png" alt=""
               /></a>
               <a
                 href="https://github.com/shreeyanshiShukla41/"
                 class="icon"
                 target="_blank"
-                ><img src="/images/github.png" alt=""
+                ><img src="images/github.png" alt=""
               /></a>
               <a
                 href="https://leetcode.com/u/codingnew50/"
                 class="icon"
                 target="_blank"
-                ><img src="/images/leetcode.png" style="border-radius: 50%"
+                ><img src="images/leetcode.png" style="border-radius: 50%"
               /></a>
               <a
                 href="https://www.geeksforgeeks.org/user/shreeyanshfckm/"
                 target="_blank"
                 class="icon"
-                ><img src="/images/gfg.png" style="border-radius: 50%"
+                ><img src="images/gfg.png" style="border-radius: 50%"
               /></a>
             </span>
           </div>
           <!-- class="resume-div flex w-[800px] gap-x-3 items-center mx-auto" 
         <td>    <p class="text-xl text-semibold text-rose-500">Download My Resume</p>
       </td> 
-        -->
-          
-        </div>
+        --></div>
         <div id="image" class="px-4">
-          <img src="/images/pic-portfolio.jpg" alt="image......" class="mx-auto" />
+          <img
+            src="images/pic-portfolio.jpg"
+            alt="image......"
+            class="mx-auto"
+          />
         </div>
       </div>
 
@@ -281,7 +290,12 @@
       </div>
 
       <div id="contact-div">
-        <form name="myForm" id="contact-form" class="text-center text-xl text-semibold" onsubmit="return validateForm()">
+        <form
+          name="myForm"
+          id="contact-form"
+          class="text-center text-xl text-semibold"
+          onsubmit="return validateForm()"
+        >
           <h1 class="text-3xl underline font-bold">Contact/Feedback Form</h1>
           <br /><br />
 
@@ -302,7 +316,8 @@
         </form>
         <!-- <a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by Vlad Szirka - Flaticon</a> -->
         <div class="flex w-[100%] items-center justify-center">
-          Made with &nbsp;<img src="/images/heart.png" id="heart" />&nbsp; from &nbsp
+          Made with &nbsp;<img src="images/heart.png" id="heart" />&nbsp; from
+          &nbsp
           <a href="https://www.emailjs.com/" id="emailjs">EMAILJS</a>
         </div>
       </div>
@@ -310,12 +325,11 @@
 
     <script src="script.js"></script>
     <script>
-
       function validateForm() {
         let x = document.forms["myForm"]["user_name"].value;
-        let y=document.forms["myForm"]["user_email"].value;
-        let z=document.forms["myForm"]["message"].value;
-        if (x === "" || y==="" || z==="") {
+        let y = document.forms["myForm"]["user_email"].value;
+        let z = document.forms["myForm"]["message"].value;
+        if (x === "" || y === "" || z === "") {
           alert("Fill all details");
           return false;
         }
