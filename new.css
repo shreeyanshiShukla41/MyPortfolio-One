@@ -359,3 +359,9 @@ nav ul li a:hover{
   flex-direction: column;
   }
 }
+
+@media screen and (max-width:432px) {
+  #contact-form input,#contact-form textarea{
+    width: 80%;
+  }
+}
